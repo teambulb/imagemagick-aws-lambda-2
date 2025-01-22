@@ -29,7 +29,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y make
-          make all
+          script -q -c "make all"
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v3
